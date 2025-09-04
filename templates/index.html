@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CESCA Task Manager</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <h1>CESCA Task Manager</h1>
+    <p>Organize. Track. Succeed.</p>
+    <nav>
+      <a href="{{ url_for('login') }}">Login</a>
+      <a href="{{ url_for('register') }}">Register</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to the CESCA Task Management App</h2>
+    <p>A simple tool built by CESCA members to help you manage your academic and personal tasks effectively.</p>
+    <a href="{{ url_for('register') }}">Get Started</a>
+  </section>
+
+  <section class="features">
+    <div class="feature-box">
+      <h3>📅 Stay Organized</h3>
+      <p>Keep all your tasks in one place and access them anytime.</p>
+    </div>
+    <div class="feature-box">
+      <h3>🔒 Secure Access</h3>
+      <p>Each user can only view and manage their own tasks.</p>
+    </div>
+    <div class="feature-box">
+      <h3>⚡ Easy to Use</h3>
+      <p>Clean design with simple navigation for smooth task management.</p>
+    </div>
+    <div class="feature-box">
+      <h3>🌍 Built by Students</h3>
+      <p>A collaborative project by CESCA members to solve real student needs.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 CESCA - Computer Engineering and Science Coalition Association</p>
+  </footer>
+</body>
+</html>
